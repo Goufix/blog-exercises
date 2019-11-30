@@ -24,7 +24,9 @@ export function Register(props) {
             <Card>
               <Card.Body className="pt-3">
                 <S.Div>
-                  <img src={Logo} alt="" width="50px" height="50px" />
+                  <Link to="/">
+                    <img src={Logo} alt="" width="50px" height="50px" />
+                  </Link>
                 </S.Div>
                 <h4>Criar uma conta</h4>
                 <Form autoComplete="off">
@@ -54,7 +56,7 @@ export function Register(props) {
                   </Form.Group>
                   <S.ButtonGroup>
                     <Button onClick={handleSubmit}>Criar conta</Button>
-                    <Link to="/" variant="button primary">
+                    <Link to="/login" variant="button primary">
                       Entrar
                     </Link>
                   </S.ButtonGroup>

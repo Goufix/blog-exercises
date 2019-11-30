@@ -22,7 +22,9 @@ export function Login(props) {
             <Card>
               <Card.Body className="pt-3">
                 <S.Div>
-                  <img src={Logo} alt="" width="50px" height="50px" />
+                  <Link to="/">
+                    <img src={Logo} alt="" width="50px" height="50px" />
+                  </Link>
                 </S.Div>
                 <h4>Login</h4>
                 <Form autoComplete="off">
